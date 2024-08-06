@@ -3,16 +3,28 @@ Using a RNN with LSTM to predict whether or not a Tweet contains language which 
 
 ![image](https://github.com/user-attachments/assets/e7a36dd7-6ea9-4b0f-a69c-8daa74100329)
 
+---
+
 ### Objective
 This project was completed as part of CU Boulder's Unsupersived Algorithms in Machine Learning course and as part of Kaggle's 'Natural Language Processing with Disaster Tweets' competition. The dataset contains 10,000 Tweets that are already classified. The purpose of this project is to develop a model that correctly predicts which Tweets are about real disasters and which are not. When applied to real life use, a model's ability to correctly identify Tweets about real disasters is important, as certain words and phrases can be used metaphorically or ironically. For example, in the Tweet shown above, the user writes that the sky was "ABLAZE". With the photo of a beautiful sunset provided, a typical person would able to use context clues and determine that this Tweet is not about a real disaster. However, this context is not as clear to a machine learning model.
 
 ---
 
 ### Methods
+Libraries Used
+- pandas
+- matplotlib
+- seaborn
+- numpy
+- nltk (stopwords, ngrams, word_tokenize, train_test_split)
+- sklearn (CountVectorizer)
+- keras (Tokenizer, pad_sequences, Sequential, Embedding, LSTM, Dense, SpatialDropoutID, Adam)
+- tqdm
+
 Exploratory Data Analysis
-- Histogram of the distribution of 'target' classes (Seaborn)
-- Histogram of the distribution of # of characters in the Tweets (Seaborn)
-- Histogram of the distribution of # of words in the Tweets (Seaborn)
+- Histogram of the distribution of 'target' classes 
+- Histogram of the distribution of # of characters in the Tweets 
+- Histogram of the distribution of # of words in the Tweets 
 
 Natural Language Processing
 - Removing URLs
